@@ -1,0 +1,28 @@
+<thlogic>
+    <attr
+        sel="#head"
+        th:replace="~{fragments/head :: headFragment}"
+    />
+
+    <attr
+        sel="#result-message"
+        th:text="${__${T(com.robinerickson.util.AttributeNames).RESULT_MESSAGE}__}"
+    />
+
+    <attr
+        sel="#play-again-link"
+        th:href="@{__${T(com.robinerickson.util.GameMappings).RESTART}__}"
+    />
+
+    <attr
+        sel="#home-link"
+        th:href="@{__${T(com.robinerickson.util.GameMappings).HOME}__}"
+    />
+
+    <attr
+        sel="#footer"
+        th:replace="~{fragments/footer :: footerFragment}"
+    />
+
+
+</thlogic>
