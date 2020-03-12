@@ -25,8 +25,7 @@ public class GameServiceImpl implements GameService {
     // == init ==
     @PostConstruct
     public void init() {
-        log.info("The Main Message is = {}", messageGenerator.getMainMessage());
-        log.info("The number is = {}", game.getNumber());
+        log.info("Game init called");
     }
 
     // == public methods ==

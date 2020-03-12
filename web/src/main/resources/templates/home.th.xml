@@ -4,6 +4,10 @@
         th:replace="~{fragments/head :: headFragment}"
     />
 
+    <attr sel="#welcome-text"
+          th:text="#{game.welcome.text}"
+    />
+
     <attr
         sel="#footer"
         th:replace="~{fragments/footer :: footerFragment}"
@@ -11,6 +15,7 @@
 
     <attr
         sel="#play-link"
+        th:text="#{game.play.again}"
         th:href="@{__${T(com.robinerickson.util.GameMappings).PLAY}__}"
     />
 </thlogic>

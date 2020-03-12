@@ -5,6 +5,10 @@
         th:replace="~{fragments/head :: headFragment}"
     />
 
+    <attr sel="#game-title"
+          th:text="#{game.title}"
+    />
+
     <attr
         sel="#main-message"
         th:text="${__${T(com.robinerickson.util.AttributeNames).MAIN_MESSAGE}__}"
@@ -20,9 +24,16 @@
         th:action="@{__${T(com.robinerickson.util.GameMappings).PLAY}__}"
     />
 
+    <attr sel="#enter-guess"
+          th:text="#{game.enter.guess}"
+    />
+
+    <attr sel="#submit"
+          th:value="#{game.submit}"
+    />
+
     <attr
         sel="#footer"
         th:replace="~{fragments/footer :: footerFragment}"
     />
-
 </thlogic>

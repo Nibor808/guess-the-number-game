@@ -46,7 +46,6 @@ public class GameImpl implements Game {
         remainingGuesses = guessCount;
         biggest = numberGenerator.getMaxNumber();
         number = numberGenerator.next();
-        log.debug("The number is = {}", number);
     }
 
     @PreDestroy
