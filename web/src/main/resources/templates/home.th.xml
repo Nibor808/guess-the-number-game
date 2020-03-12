@@ -15,7 +15,7 @@
 
     <attr
         sel="#play-link"
-        th:text="#{game.play.again}"
+        th:text="#{game.play}"
         th:href="@{__${T(com.robinerickson.util.GameMappings).PLAY}__}"
     />
 </thlogic>
